@@ -12,7 +12,7 @@ $background-opacity: 0.7;
     &#bg-img {
       background: $home-image;
       background-attachment: fixed;
-      background-size: cover;
+      background-size: 100%;
       background-repeat: no-repeat;
 
       &:after {
