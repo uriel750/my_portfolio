@@ -44,7 +44,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/small.jpg");
       width: 150px;
       height: 150px;
     }
@@ -61,6 +61,9 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  .boxes {
+    grid-template-columns: 1fr;
+  }
 }
 //Smarthphones
 @include mediaSm {
@@ -72,10 +75,30 @@
     font-size: 3rem;
     margin-top: 10vh;
   }
+  .lg-heading {
+    margin-top: 1rem;
+    font-size: 5rem;
+  }
   .nav-link {
     font-size: 20px;
   }
   .projects {
     grid-template-columns: 1fr;
+  }
+  main#home {
+    .center {
+      margin-top: 20vh;
+      h1 {
+        font-size: 4.4rem;
+        padding: 0.9rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+        padding: 0.9rem;
+      }
+      a {
+        font-size: 1.4rem;
+      }
+    }
   }
 }

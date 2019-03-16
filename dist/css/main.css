@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/portrait.jpg);
+      background: url(../img/uriel.jpg);
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -148,7 +148,7 @@ main {
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.6rem; }
       main .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
@@ -197,11 +197,31 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    border-radius: 5%; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+
+.boxes {
+  display: grid;
+  grid-gap: 0.3rem;
+  grid-template-columns: repeat(2, 1fr); }
+  .boxes div {
+    font-size: 1rem;
+    border: 2px #fff solid;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0 1.5rem 0 1, 5rem;
+      background: #eece1a;
+      color: #000;
+      margin: 2rem; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -260,14 +280,16 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/small.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -276,7 +298,20 @@ main {
   main#home h1 {
     font-size: 3rem;
     margin-top: 10vh; }
+  .lg-heading {
+    margin-top: 1rem;
+    font-size: 5rem; }
   .nav-link {
     font-size: 20px; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  main#home .center {
+    margin-top: 20vh; }
+    main#home .center h1 {
+      font-size: 4.4rem;
+      padding: 0.9rem; }
+    main#home .center h2 {
+      font-size: 1.4rem;
+      padding: 0.9rem; }
+    main#home .center a {
+      font-size: 1.4rem; } }
