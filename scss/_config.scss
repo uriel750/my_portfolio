@@ -10,11 +10,10 @@ $background-opacity: 0.7;
 @mixin background {
   @if $show-home-image {
     &#bg-img {
-      background: $home-image no-repeat center center fixed;
-      -webkit-background-size: cover; /* For WebKit*/
-      -moz-background-size: cover; /* Mozilla*/
-      -o-background-size: cover; /* Opera*/
+      background: $home-image;
+      background-attachment: fixed;
       background-size: cover;
+      background-repeat: no-repeat;
 
       &:after {
         content: "";
