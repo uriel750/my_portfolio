@@ -64,10 +64,6 @@
   .boxes {
     grid-template-columns: 1fr;
   }
-  body {
-    background-size: cover; /* stretches to size of viewport */
-    background-position: center;
-  }
 }
 //Smarthphones
 @include mediaSm {
